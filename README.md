@@ -45,3 +45,7 @@ Sur le site :
   - voir tout les client
     - et les administrer
   - voir le materielle et pouvoir le gere
+
+Les logs : 
+
+![clog](Capture%20d’écran%20du%202022-05-16%2011-42-27.png)
