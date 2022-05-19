@@ -2,10 +2,10 @@
 
 Tableau de bord :
 
-CM = groupe + sujet
-TP1 = bha tp1
-TD1 = juste le git
-TD2 = logo + cahier des charges
+* CM = groupe + sujet
+* TP1 = bha tp1
+* TD1 = juste le git
+* TD2 = logo + cahier des charges
 
 ------
 
