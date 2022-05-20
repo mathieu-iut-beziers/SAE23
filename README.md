@@ -21,39 +21,39 @@ Notre magnifique :
 
 ## Description de BDD
 
-- Base client :
-  - ID
-  - Nom
-  - Prénom
-  - Tel
-  - Adresse
-  - Nombre de près en coure
-  - Matérielle en coure de loc
-- Base matérielle :
-  - Type (voiture, ...)
-  - Description
-  - Prix
-  - Stoque disponible
-- Base pour les connexions sur le site :
-  - Surnom
-  - ID
-  - MDP
-- Base avec les prix / près :
-  - Près en cours
-  - Prix
-  - Statuts
-  - ID
+* Base client :
+  * ID
+  * Nom
+  * Prénom
+  * Tel
+  * Adresse
+  * Nombre de près en coure
+  * Matérielle en coure de loc
+* Base matérielle :
+  * Type (voiture, ...)
+  * Description
+  * Prix
+  * Stoque disponible
+* Base pour les connexions sur le site :
+  * Surnom
+  * ID
+  * MDP
+* Base avec les prix / près :
+  * Près en cours
+  * Prix
+  * Statuts
+  * ID
 
 Sur le site :
 
-- Partie client :
-  - Voir leurs prés
-  - Faire des prés
-  - Voir la matérielle dispo, et leur prix
-- Partie admin :
-  - Voir tous les clients
-  - Et les administrer
-  - Voir le matérielle et pouvoir le géré
+* Partie client :
+  * Voir leurs prés
+  * Faire des prés
+  * Voir la matérielle dispo, et leur prix
+* Partie admin :
+  * Voir tous les clients
+  * Et les administrer
+  * Voir le matérielle et pouvoir le géré
 
 ------
 
