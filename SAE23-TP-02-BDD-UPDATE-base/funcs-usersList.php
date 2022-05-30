@@ -14,6 +14,7 @@ function usersList() {
         afficheTH('user');
         afficheTH('pass');
         afficheTH('mail');
+        afficheTH('action');
         printf("</tr>\n");
       }
       printf("<tr>");
@@ -25,6 +26,7 @@ function usersList() {
       afficheTD($user);
       afficheTD($pass);
       afficheTD($mail);
+      afficheTD('<a href="index.php?action=updateForm&id='.$id.'">Modifier</a>');
       printf("</tr>\n");
     }
     printf("</table>\n");
