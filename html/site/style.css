@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')
+}
+
+#BT{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 0px 0px 40px 40px;
+  margin-top: 5%;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color:#b5d5a7;
+    background-image: url("liane2-42.png") ;
+    
+}
+
+svg {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.titre {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #5eb736;
+    margin-top: -2.5%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 0px 0px 40px 40px;
+    -moz-border-radius: 0px 0px 40px 40px;
+}
+
+.partie_1 {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: justify;
+  animation-duration: 2.5s;
+  animation-name: slideinleft;
+  margin-top: 10%;
+  margin-left: 35%;
+  margin-right: -0.5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 20px 0px 0px 20px;
+  -moz-border-radius: 20px 0px 0px 20px;
+}
+
+.partie_2 {
+  background-color:rgba(255, 255, 255, 0.7);
+  text-align: justify;
+  animation-duration:2.5s;
+  animation-name: slideinright;
+  margin-top: 10%;
+  margin-right: 35%;
+  margin-left: -0.55%;
+  margin-bottom: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+}
+
+@keyframes slideinleft {
+   from {
+     margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 35%;
+    }
+  }
+
+@keyframes slideinright  {
+  from {
+    margin-right: 100%;
+   }
+ 
+   to {
+     margin-right: 35%;
+   }
+   }
+ 
