@@ -56,7 +56,7 @@ Notre magnifique :
   * client
   * status
 
-    CREATE TABLE `db_PUIG`.`base_pret` ( `id_pret` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT , `id_mat` INT(11) UNSIGNED NOT NULL , `nom_obj` VARCHAR(30) NOT NULL , `client` VARBINARY(30) NOT NULL , `status` VARBINARY(30) NOT NULL , PRIMARY KEY (`id_pret`)) ENGINE = MyISAM;
+        CREATE TABLE `db_PUIG`.`base_pret` ( `id_pret` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT , `id_mat` INT(11) UNSIGNED NOT NULL , `nom_obj` VARCHAR(30) NOT NULL , `client` VARBINARY(30) NOT NULL , `status` VARBINARY(30) NOT NULL , PRIMARY KEY (`id_pret`)) ENGINE = MyISAM;
 
 Sur le site :
 
