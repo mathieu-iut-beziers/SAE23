@@ -27,22 +27,36 @@ Notre magnifique :
   * Prénom
   * Tel
   * Adresse
+  * e-mail
   * Nombre de près en coure
-  * Matérielle en coure de loc
+  * SQL corespondant :
+  
+        CREATE TABLE `db_PUIG`.`base_client` ( `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT , `nom` VARBINARY(30) NOT NULL , `prenom` VARBINARY(30) NOT NULL , `phone` INT(12) NOT NULL , `adresse` VARBINARY(255) NOT NULL , `mail` VARBINARY(255) NOT NULL , `nb_location` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
+
 * Base matérielle :
   * Type (voiture, ...)
   * Description
   * Prix
-  * Stoque disponible
+  * stock disponible
+  * SQL corespondant :
+  
+        CREATE TABLE `db_PUIG`.`base_materielle` ( `id_mat` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT , `type` VARCHAR(30) NOT NULL , `description` VARCHAR(255) NOT NULL , `prix` NOT NULL , `stock` INT(255) NOT NULL , PRIMARY KEY (`id_mat`)) ENGINE = MyISAM;
+
 * Base pour les connexions sur le site :
   * Surnom
   * ID
   * MDP
-* Base avec les prix / près :
-  * Près en cours
-  * Prix
-  * Statuts
-  * ID
+  
+        CREATE TABLE `db_PUIG`.`base_co` ( `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT , `user` VARBINARY(32) NOT NULL , `password` VARBINARY(32) NOT NULL , `role` INT(2) NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
+
+* Base avec les prix / pret :
+  * id_pert
+  * id_mat
+  * nom_obj
+  * client
+  * status
+
+    CREATE TABLE `db_PUIG`.`base_pret` ( `id_pret` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT , `id_mat` INT(11) UNSIGNED NOT NULL , `nom_obj` VARCHAR(30) NOT NULL , `client` VARBINARY(30) NOT NULL , `status` VARBINARY(30) NOT NULL , PRIMARY KEY (`id_pret`)) ENGINE = MyISAM;
 
 Sur le site :
 
