@@ -72,10 +72,5 @@ On souhaite réaliser une application web pour une entreprise de location d'engi
 
 ## 4 - Délais (date de realisation attendue)
 
-La deadline de notre projet et le mardi 14 juin. Avec le rendu au comanditaire du code source de notre aplication, un tutorielle d'instalation et une documentation technique.
+La deadline de notre projet et le mardi 14 juin. Avec le rendu au commanditaire du code source de notre application, un tutorielle d'installation et une documentation technique.
 
--------
-
-## Les logs
-
-![clog](Capture%20d’écran%20du%202022-05-16%2011-42-27.png)
