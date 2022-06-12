@@ -3,6 +3,15 @@
     src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')
 }
 
+#logo{
+  height: 21%;
+  width: 23%;
+}
+
+#en_haut{
+  font-weight: bold;
+}
+
 #BT{
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
@@ -50,6 +59,7 @@ svg {
   border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 20px 0px 0px 20px;
   -moz-border-radius: 20px 0px 0px 20px;
+  font-size: 120%;
 }
 
 .partie_2 {
