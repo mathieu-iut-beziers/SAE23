@@ -140,3 +140,9 @@ Pour finir en bas de chaque page que ce soit côté client ou côté administrat
 Ou 
 
 ![img21](./img/21.png)
+
+-------
+
+## Démonstration technique
+
+<iframe width="1712" height="877" src="https://www.youtube.com/embed/guORSnv3BA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
