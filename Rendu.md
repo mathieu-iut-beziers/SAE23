@@ -28,7 +28,6 @@ Livrable de La SAE23 Comportant le Tutoriel d’installation et d’utilisation 
 ## Démonstration technique
 
 1. Vidéo
-2. Commentaire avec marqueurs de temps
 
 -------
 -------
