@@ -100,4 +100,17 @@ svg {
      margin-right: 35%;
    }
    }
- 
+table{
+  border-style: ridge;
+  border-width: 2px;
+  border-color: #000;
+ }
+ th{
+   border:2px solid black;
+ }
+ tr{
+  border-bottom:2px solid black;
+ }
+ td{
+   border-right:2px solid black;
+ }
