@@ -17,10 +17,19 @@ function showLoginForm(){
         }
         
     }
+    printf('<link rel="stylesheet" href="style.css"/>');
     printf('<form action="auth.php?action=login" method="post" accept-charset="utf8">');
-    printf('Login:<br><input type="text" name="login"><br>');
-    printf('Mot de passe:<br> <input type="password" name="pass"><br>');
-    printf('<input type="submit" value="Connexion">');
+    printf(
+        '<label><b>Nom utilisateur</b></label>
+        <input type="text" name="login"> <br>'
+    );
+    printf(
+        '<label><b>Mot de passe</b></label> 
+        <input type="password" name="pass"> <br>'
+    );
+    printf(
+        '<input type="submit" value="Connexion">'
+    );
     printf('</form>');
     printf('Pas encore inscrit ? <a href="index.php?action=register">Inscrivez vous</a>');
     }

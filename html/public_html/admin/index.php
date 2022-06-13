@@ -1,8 +1,8 @@
 <?php
 session_start();
 require_once('../config-db.php');
-require_once('../locationForm.php');
-require_once('../showPret.php');
+require_once('usersList.php');
+require_once('showPret.php');
 if(!isset($_SESSION['auth'])){
     header('Location: ../index.php');
 }
@@ -39,7 +39,7 @@ if(!isset($_SESSION['auth'])){
         <div class="partie_1">
             <p> 
                 Liste des objets disponibles :<br>
-                <?php showLocationForm();?>
+                <?php usersList();?>
             </p>
             
         </div>
@@ -53,7 +53,7 @@ if(!isset($_SESSION['auth'])){
         <div class="partie_1">
             <p> 
                 <a href="../location.php">Locations</a><br>
-                <a href="logout.php">Se déconnecter</a></p>
+                <a href="../logout.php">Se déconnecter</a></p>
             
         </div>
         <div id="BT">

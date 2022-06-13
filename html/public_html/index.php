@@ -41,16 +41,19 @@ require_once('loginForm.php');
                 Engins de chantier, voitures, équipements en tout genres pour professionnels ou particuliers, vous pouvez dès à présent découvrir nos diverses offres sur notre application web.  
             </p>
         </div>
-        <div class="partie_2" id="log-in">
+        <div class="partie_2">
             <h2>Connexion</h2>
-            <p> <?php 
+            <div id="log">
+            <p> 
+                <?php 
             if(!isset($_GET['action'])){
                 showLoginForm();
             }else if($_GET['action'] == 'register'){
                 showRegisterForm();
             }
-            ?></p>
-            
+                ?>
+            </p>
+            </div>
         </div>
         <div id="BT">
             <a href="#en_haut">Retour en haut de la page</a>
