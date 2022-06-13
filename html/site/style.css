@@ -48,8 +48,8 @@ svg {
 .partie_1 {
   background-color: rgba(255, 255, 255, 0.7);
   text-align: justify;
-  animation-duration: 2.5s;
-  animation-name: slideinleft;
+  /* animation-duration: 2.5s;
+  animation-name: slideinleft; */
   margin-top: 10%;
   margin-left: 35%;
   margin-right: -0.5%;
@@ -66,8 +66,8 @@ svg {
 .partie_2 {
   background-color:rgba(255, 255, 255, 0.7);
   text-align: justify;
-  animation-duration:2.5s;
-  animation-name: slideinright;
+  /* animation-duration:2.5s;
+  animation-name: slideinright; */
   margin-top: 10%;
   margin-right: 35%;
   margin-left: -0.55%;
