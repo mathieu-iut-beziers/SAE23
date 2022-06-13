@@ -10,7 +10,7 @@ Le professionnel R&T peut être amené à développer des applications Web, sous
 
 ### Notre logo :
 
-![logo](./logo.png)
+![logo](./img/logo.png)
 
 ## 2 - Objettif du projet
 
