@@ -31,6 +31,6 @@ function showLoginForm(){
         '<input type="submit" value="Connexion">'
     );
     printf('</form>');
-    printf('Pas encore inscrit ? <a href="index.php?action=register">Inscrivez vous</a>');
+    printf('<h3>Pas encore inscrit ? <a href="index.php?action=register">Inscrivez vous</a> </h3>');
     }
 ?>

@@ -94,7 +94,10 @@ if(!isset($_GET['action'])){
             printf('<td>'.$adresse.'</td>');
             printf('<td>'.$tel.'</td>');
             printf('<td>'.$mail.'</td>');
-            printf('<td><a href="?action=remove&id='.$id.'">Supprimer</a><br><a href="?action=update&id='.$id.'">Modifier</a></td>');
+            printf(
+                '<td><a href="?action=remove&id='.$id.'">Supprimer</a>
+                <br>
+                <a href="?action=update&id='.$id.'">Modifier</a></td>');
         }
         printf('</table>');
         $stmt->closeCursor();

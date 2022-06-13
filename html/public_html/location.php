@@ -38,14 +38,14 @@ if(!isset($_SESSION['auth'])){
         </div>
         <div class="partie_1">
             <p> 
-                Liste des objets disponibles :<br>
+                <h2>Liste des objets disponibles :</h2><br>
                 <?php showLocationForm();?>
             </p>
             
         </div>
         <div class="partie_2">
             <p> 
-                Liste de vos prêts :<br>
+                <h2>Liste de vos prêts :</h2><br>
                 <?php showPret(); ?>
             </p>
             
@@ -53,10 +53,11 @@ if(!isset($_SESSION['auth'])){
         <div class="partie_1">
         <p><?php
             if($_SESSION['role'] == 1){
-                printf('<a href="./admin/index.php">Panel d\'administration</a><br>');
+                printf('<h4><a href="./admin/index.php">Panel d\'administration</a></h4>');
             }
             ?>
-            <a href="logout.php">Se déconnecter</a></p>
+
+            <h4><a href="logout.php">Se déconnecter</a></h4>
             
         </div>
         <div id="BT">

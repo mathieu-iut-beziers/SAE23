@@ -38,22 +38,22 @@ if(!isset($_SESSION['auth'])){
         </div>
         <div class="partie_1">
             <p> 
-                Liste des objets disponibles :<br>
+                <h2> Liste des utilisateur : </h2><br>
                 <?php usersList();?>
             </p>
             
         </div>
         <div class="partie_2">
             <p> 
-                Liste de vos prêts :<br>
+                <h2> Liste des prêts : </h2><br>
                 <?php showPret(); ?>
             </p>
             
         </div>
         <div class="partie_1">
-            <p> 
-                <a href="../location.php">Locations</a><br>
-                <a href="../logout.php">Se déconnecter</a></p>
+            
+            <h4> <a href="../location.php">Locations</a> </h4>
+            <h4> <a href="../logout.php">Se déconnecter</a> </h4>
             
         </div>
         <div id="BT">

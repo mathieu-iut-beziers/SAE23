@@ -23,6 +23,28 @@ function validLocation($id){
 ?>
 
 <?php
+function addStock($id){
+    if(isset($_GET['error'])){
+        printf('<p style="color:red;">Veuillez entrer un chiffre entier positif<br><p>');
+    }
+    printf('Définir la quantité pour cet objet');
+    printf('<form action="addStock.php?id='.$id.'" method="post" accept-charset="utf8">');
+    printf('<input type="text" name="nb">');
+    printf('<input type="submit" value="ajouter"');
+}
+function addObjet(){
+    printf('Objet à ajouter ?');
+    printf('<form action="addObjet.php" method="post" accept-charset="utf8">');
+    printf('Objet:<br><input type="text" name="objet"><br>');
+    printf('Description:<br><input type="text" name="desc"><br>');
+    printf('Prix:<br><input type="text" name="prix"><br>');
+    printf('Disponible:<br><input type="text" name="stock"><br>');
+    printf('<input type="submit" value="Définir">');
+    printf('</form>');
+}
+?>
+
+<?php
 function showLocationForm(){
 $pdo=new PDO('mysql:host=localhost;dbname=db_PUIG;charset=UTF8','22103051','Mathieu');
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
@@ -53,19 +75,42 @@ if(!isset($_GET['action'])){
             printf('<td>'.$desc.'</td>');
             printf('<td>'.$prix.'€</td>');
             printf('<td>'.$dispo.'</td>');
-            if($dispo>0){
-                printf('<td><a href="location.php?id='.$id.'&action=louer">Louer</a></td>');
+            if($_SESSION['role']==1){
+                if($dispo>0){
+                    printf('<td><a href="location.php?id='.$id.'&action=louer">Louer</a><br><a href="?action=addStock&id='.$id.'">Quantité</a></td>');
+                }else{
+                    printf('<td><a href="?action=addStock&id='.$id.'">Quantité</a></td>');
+                }
             }else{
-                printf('<td>Indisponible</td>');
+                if($dispo>0){
+                    printf('<td><a href="location.php?id='.$id.'&action=louer">Louer</a></td>');
+                }else{
+                    printf('<td>Indisponible</td>');
+                }
             }
+            
+            
             
         }
         printf('</table>');
+        printf('<a href="?action=addObjet">Ajouter un objet</a>');
         $stmt->closeCursor();
     }
 }else{
     if($_GET['action'] == 'louer'){
         validLocation($_GET['id']);
+    }else if($_GET['action'] == 'addStock'){
+        if($_SESSION['role']==1){
+            addStock($_GET['id']);
+        }else{
+            header('Location: location.php');
+        }
+    }else if($_GET['action'] == 'addObjet'){
+        if($_SESSION['role']==1){
+            addObjet();
+        }else{
+            header('Location: location.php');
+        }
     }
 }
 }

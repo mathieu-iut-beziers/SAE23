@@ -43,7 +43,6 @@ require_once('loginForm.php');
         </div>
         <div class="partie_2">
             <h2>Connexion</h2>
-            <div id="log">
             <p> 
                 <?php 
             if(!isset($_GET['action'])){
@@ -53,7 +52,7 @@ require_once('loginForm.php');
             }
                 ?>
             </p>
-            </div>
+            
         </div>
         <div id="BT">
             <a href="#en_haut">Retour en haut de la page</a>

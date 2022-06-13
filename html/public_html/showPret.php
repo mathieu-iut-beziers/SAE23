@@ -29,8 +29,8 @@ function showPret(){
                     printf('<tr>');
                     printf('<th>id</th>');
                     printf('<th>Objet</th>');
-                    printf('<th>Status</th>');
                     printf('<th>Prix</th>');
+                    printf('<th>Status</th>');
                     printf('</tr>');
                 }
                 $objetInfo=$pdo->prepare('SELECT * FROM base_materielle WHERE id_mat=:idmat');
