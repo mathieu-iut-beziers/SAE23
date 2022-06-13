@@ -145,4 +145,6 @@ Ou
 
 ## Démonstration technique
 
-<iframe width="1712" height="877" src="https://www.youtube.com/embed/guORSnv3BA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Lien de la démo :
+
+https://www.youtube.com/watch?v=guORSnv3BA0
